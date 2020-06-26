@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gbu-n5-Bh1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="UUO-xA-RgH">
+            <objects>
+                <viewController id="gbu-n5-Bh1" customClass="HomeVC" customModule="sorting_visualizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RCO-K5-Wf2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnT-tH-wOo" customClass="RoundedButton" customModule="sorting_visualizer" customModuleProvider="target">
+                                <rect key="frame" x="234" y="216" width="160" height="190"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="AQv-3i-x14"/>
+                                    <constraint firstAttribute="width" constant="160" id="pP6-9m-8Pr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <inset key="titleEdgeInsets" minX="-49" minY="117" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Selection sort" image="icons8-select-50">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SelectionSortBtn:" destination="gbu-n5-Bh1" eventType="touchUpInside" id="k7G-UK-RkK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixC-cB-gza" customClass="RoundedButton" customModule="sorting_visualizer" customModuleProvider="target">
+                                <rect key="frame" x="20" y="216" width="160" height="190"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="3l1-hm-0a5"/>
+                                    <constraint firstAttribute="height" constant="190" id="R05-RX-9H8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <inset key="titleEdgeInsets" minX="-49" minY="117" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="56" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Bubble sort" image="icons8-bubble-48">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="BubbleSortBtn:" destination="gbu-n5-Bh1" eventType="touchUpInside" id="0Ke-Bf-xdP"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4I-62-Xsg" customClass="RoundedButton" customModule="sorting_visualizer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorting Algorithms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h00-IW-n5k">
+                                        <rect key="frame" x="91.5" y="85" width="231" height="36"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="h00-IW-n5k" firstAttribute="centerY" secondItem="O4I-62-Xsg" secondAttribute="centerY" constant="20" id="OBA-A4-zJs"/>
+                                    <constraint firstItem="h00-IW-n5k" firstAttribute="centerX" secondItem="O4I-62-Xsg" secondAttribute="centerX" id="f2L-mC-TOu"/>
+                                    <constraint firstAttribute="height" constant="166" id="yCw-Le-Nj6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N66-HH-A4j" customClass="RoundedButton" customModule="sorting_visualizer" customModuleProvider="target">
+                                <rect key="frame" x="20" y="456" width="160" height="190"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="CU1-78-vHk"/>
+                                    <constraint firstAttribute="width" constant="160" id="qP9-9v-Yyd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <inset key="titleEdgeInsets" minX="-49" minY="117" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="56" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Shell sort" image="icons8-shell-48">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ShellSortBtn:" destination="gbu-n5-Bh1" eventType="touchUpInside" id="Ycb-ab-dWc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyG-HE-u8L" customClass="RoundedButton" customModule="sorting_visualizer" customModuleProvider="target">
+                                <rect key="frame" x="234" y="456" width="160" height="190"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="3ms-Zw-vtc"/>
+                                    <constraint firstAttribute="height" constant="190" id="tM1-bA-6ny"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <inset key="titleEdgeInsets" minX="-49" minY="117" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Bogo sort" image="icons8-quick-mode-on-50">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="BogoSortBtn:" destination="gbu-n5-Bh1" eventType="touchUpInside" id="ZTF-L8-HdW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1882384121" green="0.1882297695" blue="0.1882356405" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="N66-HH-A4j" firstAttribute="leading" secondItem="MAc-mX-SxH" secondAttribute="leading" constant="20" id="15S-M6-LdM"/>
+                            <constraint firstItem="O4I-62-Xsg" firstAttribute="trailing" secondItem="MAc-mX-SxH" secondAttribute="trailing" id="5vd-15-wFq"/>
+                            <constraint firstItem="wyG-HE-u8L" firstAttribute="top" secondItem="rnT-tH-wOo" secondAttribute="bottom" constant="50" id="Gw8-pa-uO4"/>
+                            <constraint firstItem="MAc-mX-SxH" firstAttribute="trailing" secondItem="wyG-HE-u8L" secondAttribute="trailing" constant="20" id="Ktz-vz-ZAn"/>
+                            <constraint firstItem="O4I-62-Xsg" firstAttribute="leading" secondItem="MAc-mX-SxH" secondAttribute="leading" id="ZQ2-at-p1O"/>
+                            <constraint firstItem="N66-HH-A4j" firstAttribute="top" secondItem="ixC-cB-gza" secondAttribute="bottom" constant="50" id="dVP-Da-el9"/>
+                            <constraint firstItem="MAc-mX-SxH" firstAttribute="trailing" secondItem="rnT-tH-wOo" secondAttribute="trailing" constant="20" id="h31-uw-4qa"/>
+                            <constraint firstItem="ixC-cB-gza" firstAttribute="leading" secondItem="MAc-mX-SxH" secondAttribute="leading" constant="20" id="haD-wm-F7I"/>
+                            <constraint firstItem="O4I-62-Xsg" firstAttribute="top" secondItem="RCO-K5-Wf2" secondAttribute="top" id="jhX-VY-D3l"/>
+                            <constraint firstItem="ixC-cB-gza" firstAttribute="top" secondItem="O4I-62-Xsg" secondAttribute="bottom" constant="50" id="kBh-i0-s3y"/>
+                            <constraint firstItem="rnT-tH-wOo" firstAttribute="top" secondItem="O4I-62-Xsg" secondAttribute="bottom" constant="50" id="vEN-Oa-pBF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MAc-mX-SxH"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toVisualizer" id="6cn-0h-baB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ou4-ny-yVt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-850.72463768115949" y="36.830357142857139"/>
+        </scene>
+        <!--VisualizerVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VisualizerVC" customModule="sorting_visualizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtz-eM-LBg" customClass="RoundedButton" customModule="sorting_visualizer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXXXXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnB-MX-LPr">
+                                        <rect key="frame" x="144.5" y="52" width="125" height="36"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uze-UM-Vew">
+                                        <rect key="frame" x="138.5" y="97" width="137" height="32"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                        <state key="normal" title="Generate a new array">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="GenerateNewArrayBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHM-mm-pCc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTa-EI-beK">
+                                        <rect key="frame" x="20" y="57.5" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="lmD-lp-nl2"/>
+                                            <constraint firstAttribute="height" constant="25" id="yiw-Zd-tk1"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="icons8-back-30">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="BackBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nYv-pa-BCf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.30828723047112028" blue="0.441863029233871" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="0Ti-4F-IuQ"/>
+                                    <constraint firstItem="tnB-MX-LPr" firstAttribute="centerX" secondItem="gtz-eM-LBg" secondAttribute="centerX" id="A5D-x1-uye"/>
+                                    <constraint firstItem="OTa-EI-beK" firstAttribute="leading" secondItem="gtz-eM-LBg" secondAttribute="leading" constant="20" id="GfT-W3-lpk"/>
+                                    <constraint firstItem="tnB-MX-LPr" firstAttribute="centerY" secondItem="gtz-eM-LBg" secondAttribute="centerY" id="RYo-3L-8I4"/>
+                                    <constraint firstAttribute="bottom" secondItem="uze-UM-Vew" secondAttribute="bottom" constant="11" id="XBY-AM-KDz"/>
+                                    <constraint firstItem="uze-UM-Vew" firstAttribute="centerX" secondItem="gtz-eM-LBg" secondAttribute="centerX" id="mcq-1S-S1e"/>
+                                    <constraint firstItem="OTa-EI-beK" firstAttribute="centerY" secondItem="tnB-MX-LPr" secondAttribute="centerY" id="oJF-hE-M3w"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="TXt-ap-ifp">
+                                <rect key="frame" x="111.5" y="753" width="191" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKb-Qr-4ma">
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="45"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                        <state key="normal" title="START">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="StartBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U98-Md-TAg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Iy-oN-g3C">
+                                        <rect key="frame" x="120" y="0.0" width="71" height="45"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                        <state key="normal" title="STOP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="StopBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kHM-E4-TCP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c3J-pK-mzz">
+                                <rect key="frame" x="50" y="205" width="314" height="32"/>
+                                <segments>
+                                    <segment title="Slow"/>
+                                    <segment title="Normal"/>
+                                    <segment title="Fast"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorting speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Act-Mq-veX">
+                                <rect key="frame" x="160" y="180" width="94" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1882384121" green="0.1882297695" blue="0.1882356405" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="c3J-pK-mzz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="47j-9j-oao"/>
+                            <constraint firstItem="c3J-pK-mzz" firstAttribute="top" secondItem="gtz-eM-LBg" secondAttribute="bottom" constant="65" id="7XV-k8-KrW"/>
+                            <constraint firstItem="TXt-ap-ifp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Ve-Rf-Cxh"/>
+                            <constraint firstItem="Act-Mq-veX" firstAttribute="top" secondItem="gtz-eM-LBg" secondAttribute="bottom" constant="40" id="HiZ-yj-Uao"/>
+                            <constraint firstItem="gtz-eM-LBg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="I0C-tQ-SSY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c3J-pK-mzz" secondAttribute="trailing" constant="50" id="R9G-aH-jCR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TXt-ap-ifp" secondAttribute="bottom" constant="10" id="WUm-9T-qbj"/>
+                            <constraint firstItem="gtz-eM-LBg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vFS-T3-E05"/>
+                            <constraint firstItem="Act-Mq-veX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vnC-gm-l1h"/>
+                            <constraint firstItem="gtz-eM-LBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x0m-jE-tIj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kAK-iE-kcV"/>
+                    <connections>
+                        <outlet property="algorithmTxt" destination="tnB-MX-LPr" id="ffZ-8c-4yC"/>
+                        <outlet property="sortingSpeed" destination="c3J-pK-mzz" id="HlO-Xc-Ftr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12" y="37"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="icons8-back-30" width="30" height="30"/>
+        <image name="icons8-bubble-48" width="48" height="48"/>
+        <image name="icons8-quick-mode-on-50" width="48" height="48"/>
+        <image name="icons8-select-50" width="48" height="48"/>
+        <image name="icons8-shell-48" width="48" height="48"/>
+    </resources>
+</document>
