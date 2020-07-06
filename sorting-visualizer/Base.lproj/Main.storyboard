@@ -165,9 +165,9 @@
         <!--VisualizerVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="VisualizerVC" customModule="sorting_visualizer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="VisualizerVC" customModule="sorting_visualizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtz-eM-LBg" customClass="RoundedButton" customModule="sorting_visualizer" customModuleProvider="target">
@@ -221,7 +221,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="TXt-ap-ifp">
-                                <rect key="frame" x="111.5" y="753" width="191" height="45"/>
+                                <rect key="frame" x="111.5" y="807" width="191" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKb-Qr-4ma">
                                         <rect key="frame" x="0.0" y="0.0" width="71" height="45"/>
@@ -269,7 +269,7 @@
                             <constraint firstItem="gtz-eM-LBg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="I0C-tQ-SSY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c3J-pK-mzz" secondAttribute="trailing" constant="50" id="R9G-aH-jCR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TXt-ap-ifp" secondAttribute="bottom" constant="10" id="WUm-9T-qbj"/>
-                            <constraint firstItem="gtz-eM-LBg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vFS-T3-E05"/>
+                            <constraint firstItem="gtz-eM-LBg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vFS-T3-E05"/>
                             <constraint firstItem="Act-Mq-veX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vnC-gm-l1h"/>
                             <constraint firstItem="gtz-eM-LBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x0m-jE-tIj"/>
                         </constraints>

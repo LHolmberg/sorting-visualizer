@@ -64,7 +64,7 @@ class VisualizerVC: UIViewController {
         
         for i in 0...array.count - 1 {
             stapleArray.append((ArrayValueBar(frame: CGRect(x: Int(deltaWidth) + 3 * i,
-                                                            y: Int(self.view.frame.height) - 184,
+                                                            y: Int(self.view.frame.height) - 200,
                                                             width: width, height: array[i] * -2))))
             view.addSubview(stapleArray[i])
         }
@@ -104,7 +104,7 @@ class VisualizerVC: UIViewController {
     func UpdateView(arr: [ArrayValueBar], values: [Int]) {
         var n = 0
         for i in arr {
-            i.frame.y = self.view.frame.height - 130
+            i.frame.y = self.view.frame.height - 200
             i.frame.height = CGFloat(values[n] * -2)
             n += 1
         }
